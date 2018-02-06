@@ -13,6 +13,9 @@ if (typeof(Array.prototype.filter)!=='function') {
 		return result;
 	}
 }
+else {
+	console.log('Array.filter native');
+}
 /**/
 
 /** /
@@ -27,6 +30,9 @@ if (typeof(Array.prototype.map)!=='function') {
 		}
 		return result;
 	}
+}
+else {
+	console.log('Array.map native');
 }
 /**/
 
@@ -52,6 +58,9 @@ if (typeof(Array.prototype.reduce)!=='function') {
 		}
 	}
 }
+else {
+	console.log('Array.reduce native');
+}
 /**/
 
 /** /
@@ -68,6 +77,9 @@ if (typeof(Array.prototype.concat)!=='function') {
 		return result;
 	}
 }
+else {
+	console.log('Array.concat native');
+}
 /**/
 
 /** /
@@ -82,6 +94,9 @@ if (typeof(Array.prototype.size)!=='function') {
 		let array = Array(size);
 		return this.concat(Array.apply(null, array).map(map));
 	}
+}
+else {
+	console.log('Array.size native');
 }
 /**/
 
